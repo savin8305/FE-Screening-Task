@@ -1,0 +1,81 @@
+.experence {
+  @include sectionLayout(40px 25px, var(--background-two));
+}
+
+.vertical-timeline-element-content {
+  --font-color: #323232;
+  --font-color-sub: #666;
+  --bg-color: #fff;
+  --main-color: #323232;
+  --main-focus: #2d8cf0;
+
+  @include sectionLayout(40px 25px, var(--background-two));
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  gap: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: var(--text-color-one);
+}
+.vertical-timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 100%;
+  width: 4px;
+  background: #bb28ff !important;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .pclass {
+    font-size: 40px !important;
+  }
+  .vertical-timeline-element-icon {
+    height: 100px !important;
+    width: 100px !important;
+    margin-left: -3rem !important;
+    
+  }
+  .vertical-timeline-element-content {
+    height: 1000px !important;
+  }
+  .title {
+    font: 900 3.5rem "Ubuntu Mono", "Roboto" !important;
+    letter-spacing: 2px;
+    line-height: 130px;
+  }
+  .subtitle {
+    font: 900 3rem "Ubuntu Mono", "Roboto" !important;
+    letter-spacing: 2px;
+    line-height: 130px;
+  }
+  .descli {
+    font: 900 2rem "Ubuntu Mono", "Roboto" !important;
+    letter-spacing: 2px !important;
+    line-height: 50px !important;
+  }
+  .vertical-timeline-element-date {
+    font: 900 4rem "Ubuntu Mono", "Roboto" !important;
+    letter-spacing: 2px !important;
+    line-height: 40px !important;
+  }
+  .text-center {
+    font: 900 4rem "Ubuntu Mono", "Roboto" !important;
+    letter-spacing: 2px !important;
+    line-height: 50px !important;
+    color: rgb(4, 138, 93) !important;
+  }
+  .vertical-timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 18px;
+    height: 100%;
+    width: 4px;
+  }
+}
